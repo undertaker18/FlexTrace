@@ -50,16 +50,46 @@
 
 <body class="d-flex flex-column h-100">
   <!--HEADER SECTION: NAV AND MODAL STRT-->
+  <header>
+    <nav class="navbar brand-centered pb-3">
+      <a class="pl-1" href="./contacttracing.html">
+        <img src="./images/contacttracing.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="pl-1" href="./maps.html">
+        <img src="./images/maps.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="pl-1" href="./covidinfo.html">
+        <img src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
+      </a>
+
+      <!--NAV: PUT active BESIDE nav-link TO SET ACTIVE PAGE. PUT active-item BESIDE dropdown-item IF ACTIVE PAGE IS INSIDE THE DROPDOWN MENU-->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+
+      </div>
+    </div>
+  </header>
+
   <main class="flex-shrink-0 bg-blue pb-5 margin">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="container text-center" style="margin-top: 200px; margin-bottom: 200px;" id="ff-compose">
-        <a class="pl-1" href="./contacttracing.html" >
-          <img src="./images/flex trace.png" width="150px" alt="" loading="lazy">
-        </a>
+      <div class="container bg-white pt-5 pb-5 br" style="margin-top: 55px;" id="ff-compose">
+        <script async defer
+          src="https://formfacade.com/include/110284735343174150415/form/1FAIpQLSd_XTI9ZEUts41ObjtkITRHfMF0oqOCM2FLlNxOy0E1ieO2wg/bootstrap.js?div=ff-compose"></script>
+      </div>
     </div>
   </main>
 
-  <footer class="footer ">
+  <footer class="footer mt-auto py-3">
     <div class="container text-center">
       <span class="text-muted">© 2021 CONTACT TRACING | SAMPALOC APALIT PAMPANGA | Call Center (+632) 441-7442</span>
     </div>
