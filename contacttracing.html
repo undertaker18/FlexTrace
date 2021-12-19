@@ -33,6 +33,14 @@
       border-radius: 15px;
     }
 
+    .navbar-bottom {
+      overflow: hidden;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
     .margin {
       padding-left: 20px;
       padding-right: 20px;
@@ -48,6 +56,19 @@
 
     main .ff-compose {
       color: #004AAD !important;
+    }
+
+    .h1 {
+      color: white;
+      margin-top: 20px;
+    }
+
+    .front {
+      z-index: 5000;
+    }
+
+    .back {
+      z-index: -1;
     }
   </style>
 </head>
@@ -69,16 +90,20 @@
 
       </div>
     </nav>
-
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-
-      </div>
-    </div>
   </header>
 
-  <main class="flex-shrink-0 bg-blue pb-5 margin">
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+
+    </div>
+  </div>
+  </header>
+
+  <main class="back flex-shrink-0 bg-blue pb-5 margin">
+    <div class="text-center">
+      <h1 class="h1">Contact Tracing</h1>
+    </div>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class="container bg-white pt-5 pb-5 br" style="margin-top: 55px;" id="ff-compose">
         <script async defer
@@ -87,15 +112,19 @@
     </div>
   </main>
 
-  <nav class="navbar brand-centered pb-2 mt-2">
-    <div class="justify-content-center">
-      <a class="pl-2 pr-2" href="./maps.html">
+  <div class="pb-1">
+    <p class="text-center pb-5 mb-5">© 2021 CONTACT TRACING | SAMPALOC APALIT PAMPANGA | Call Center (+632) 441-7442</p>
+  </div>
+
+  <nav class="front navbar-bottom navbar justify-content-center">
+    <div>
+      <a class="front pl-2 pr-2" href="./maps.html">
         <img class="border radius" src="./images/maps.png" width="75" alt="" loading="lazy">
       </a>
-      <a class="pl-2 pr-2" href="./covidinfo.html">
+      <a class="front pl-2 pr-2" href="./covidinfo.html">
         <img class="border radius" src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
       </a>
-      <a class="pl-2 pr-2" href="./contacttracing.html">
+      <a class="front pl-2 pr-2" href="./contacttracing.html">
         <img class="border radius" src="./images/contacttracing.png" width="75" alt="" loading="lazy">
       </a>
     </div>
@@ -106,12 +135,6 @@
       </ul>
     </div>
   </nav>
-
-  <footer class="footer mt-auto py-3">
-    <div class="container text-center">
-      <span class="text-muted">© 2021 CONTACT TRACING | SAMPALOC APALIT PAMPANGA | Call Center (+632) 441-7442</span>
-    </div>
-  </footer>
 
   <script src="./change-region.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

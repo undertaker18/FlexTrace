@@ -45,6 +45,31 @@
     main .ff-compose {
       color: #004AAD !important;
     }
+
+    .radius {
+      border-radius: 15px;
+    }
+
+    .navbar-bottom {
+      overflow: hidden;
+      background-color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .h1 {
+      color: white;
+      margin-top: 20px;
+    }
+
+    .front {
+      z-index: 5000;
+    }
+
+    .back {
+      z-index: -1;
+    }
   </style>
 </head>
 
@@ -52,14 +77,8 @@
   <!--HEADER SECTION: NAV AND MODAL STRT-->
   <header>
     <nav class="navbar brand-centered pb-3">
-      <a class="pl-1" href="./contacttracing.html">
-        <img src="./images/contacttracing.png" width="75" alt="" loading="lazy">
-      </a>
-      <a class="pl-1" href="./maps.html">
-        <img src="./images/maps.png" width="75" alt="" loading="lazy">
-      </a>
-      <a class="pl-1" href="./covidinfo.html">
-        <img src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
+      <a class="pl-1" href="./index.html">
+        <img src="./images/flex trace.png" width="75" alt="" loading="lazy">
       </a>
 
       <!--NAV: PUT active BESIDE nav-link TO SET ACTIVE PAGE. PUT active-item BESIDE dropdown-item IF ACTIVE PAGE IS INSIDE THE DROPDOWN MENU-->
@@ -71,31 +90,47 @@
 
       </div>
     </nav>
-
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-
-      </div>
-    </div>
   </header>
 
-  <main class="flex-shrink-0 bg-blue  ">
+  <main class=" back flex-shrink-0 bg-blue  ">
+    <div class="text-center">
+      <h1 class="h1">Vaccinated Maps</h1>
+    </div>
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
       <div class=" text-center" style="margin-top: 10px;" id="ff-compose">
-        <iframe src="https://public.domo.com/cards/31O7r" width="95%" height="700" marginheight="0" marginwidth="0" frameborder="0" ></iframe>
+        <iframe src="https://public.domo.com/cards/31O7r" width="95%" height="700" marginheight="0" marginwidth="0"
+          frameborder="0"></iframe>
       </div>
       <div class=" text-center" style="margin-top: 5px;" id="ff-compose">
-        <iframe src="https://public.domo.com/cards/2kO6J" width="95%" height="700" marginheight="0" marginwidth="0" frameborder="0" ></iframe>
+        <iframe src="https://public.domo.com/cards/2kO6J" width="95%" height="700" marginheight="0" marginwidth="0"
+          frameborder="0"></iframe>
       </div>
     </div>
   </main>
 
-  <footer class="footer mt-auto py-3">
-    <div class="container text-center">
-      <span class="text-muted">© 2021 CONTACT TRACING | SAMPALOC APALIT PAMPANGA | Call Center (+632) 441-7442</span>
+  <div class="pb-1">
+    <p class="text-center pb-5 mb-5">© 2021 CONTACT TRACING | SAMPALOC APALIT PAMPANGA | Call Center (+632) 441-7442</p>
+  </div>
+
+  <nav class="navbar-bottom navbar justify-content-center">
+    <div>
+      <a class="front pl-2 pr-2" href="./maps.html">
+        <img class="border radius" src="./images/maps.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="front pl-2 pr-2" href="./covidinfo.html">
+        <img class="border radius" src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="front pl-2 pr-2" href="./contacttracing.html">
+        <img class="border radius" src="./images/contacttracing.png" width="75" alt="" loading="lazy">
+      </a>
     </div>
-  </footer>
+
+    <!--NAV: PUT active BESIDE nav-link TO SET ACTIVE PAGE. PUT active-item BESIDE dropdown-item IF ACTIVE PAGE IS INSIDE THE DROPDOWN MENU-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+    </div>
+  </nav>
 
   <script src="./change-region.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
