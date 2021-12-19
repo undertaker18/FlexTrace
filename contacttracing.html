@@ -29,6 +29,10 @@
       border-radius: 15px;
     }
 
+    .radius {
+      border-radius: 15px;
+    }
+
     .margin {
       padding-left: 20px;
       padding-right: 20px;
@@ -52,14 +56,8 @@
   <!--HEADER SECTION: NAV AND MODAL STRT-->
   <header>
     <nav class="navbar brand-centered pb-3">
-      <a class="pl-1" href="./contacttracing.html">
-        <img src="./images/contacttracing.png" width="75" alt="" loading="lazy">
-      </a>
-      <a class="pl-1" href="./maps.html">
-        <img src="./images/maps.png" width="75" alt="" loading="lazy">
-      </a>
-      <a class="pl-1" href="./covidinfo.html">
-        <img src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
+      <a class="pl-1" href="./index.html">
+        <img src="./images/flex trace.png" width="75" alt="" loading="lazy">
       </a>
 
       <!--NAV: PUT active BESIDE nav-link TO SET ACTIVE PAGE. PUT active-item BESIDE dropdown-item IF ACTIVE PAGE IS INSIDE THE DROPDOWN MENU-->
@@ -88,6 +86,26 @@
       </div>
     </div>
   </main>
+
+  <nav class="navbar brand-centered pb-2 mt-2">
+    <div class="justify-content-center">
+      <a class="pl-2 pr-2" href="./maps.html">
+        <img class="border radius" src="./images/maps.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="pl-2 pr-2" href="./covidinfo.html">
+        <img class="border radius" src="./images/covidworldwide.png" width="75" alt="" loading="lazy">
+      </a>
+      <a class="pl-2 pr-2" href="./contacttracing.html">
+        <img class="border radius" src="./images/contacttracing.png" width="75" alt="" loading="lazy">
+      </a>
+    </div>
+
+    <!--NAV: PUT active BESIDE nav-link TO SET ACTIVE PAGE. PUT active-item BESIDE dropdown-item IF ACTIVE PAGE IS INSIDE THE DROPDOWN MENU-->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+    </div>
+  </nav>
 
   <footer class="footer mt-auto py-3">
     <div class="container text-center">
